@@ -6,9 +6,10 @@ public abstract class Room {
 
 
     /**
-     * Constructorul; acesta primeste 2 parametri
-     * @param name numele camerei
-     * @param size marimea camerei
+     * The constructor; it takes 2 parameters
+     *
+     * @param name room's name
+     * @param size room's size
      */
     public Room(String name, int size) {
         this.name = name;
@@ -32,11 +33,10 @@ public abstract class Room {
     }
 
 
-
     /**
-     * In acest fel fac override la toString
+     * It overrides toString
      *
-     * @return un string ce contine informatii despre camera
+     * @return a string that contains information about the room
      */
     @Override
     public String toString() {

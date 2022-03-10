@@ -1,18 +1,18 @@
 package lab2;
 
 /**
- * Generez solutia problemei
+ * Generation a problem's solution
  */
 public class Solution {
     public Problem problema;
     String[][] matrice;
 
     /**
-     * Iterez prin evenimente si prin camere. Verific daca size-ul evenimentului este mai mic sau
-     * egal decat cel al camerei curente. Daca acest lucru este adevarat, verificam ca acea camera
-     * este libera in intervalul orar dorit. In cazul in care aceasta conditie este adevarata, asignam evenimentul i la camera j
+     * I iterate through the events and rooms and verify that the size od the event is smaller or equal than the one of the room.
+     * If this is true, I verify that the room is available during the hours of the event. In that case,
+     * I assignate the event to that room
      *
-     * @param problema o problema
+     * @param problema a problem
      */
     public Solution(Problem problema) {
 

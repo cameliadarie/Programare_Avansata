@@ -1,10 +1,10 @@
 package lab2;
 
 /**
- * Un tip de room
+ * A type of room
  */
 public class Lecture extends Room {
-String os;
+    String os;
 
     public Lecture(String name, int size, String os) {
         super(name, size);

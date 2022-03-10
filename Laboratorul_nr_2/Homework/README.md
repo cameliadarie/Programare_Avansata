@@ -1,4 +1,5 @@
 # Homework
+Am rezolvat toate cerintele la aceasta tema.
 
 Cerinte:
 

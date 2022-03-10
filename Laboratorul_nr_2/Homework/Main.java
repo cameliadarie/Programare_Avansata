@@ -6,13 +6,13 @@ package lab2;
 public class Main {
 
     /**
-     * Aici instantiez toate obievtele si le si afisez, asa cum cere la punctul 4
+     * Here I instantiate a problem and its solution
      *
      * @param args
      */
     public static void main(String[] args) {
-     Problem problema= new Problem();
-     Solution solutie= new Solution(problema);
-     solutie.afisare(problema);
+        Problem problema = new Problem();
+        Solution solutie = new Solution(problema);
+        solutie.afisare(problema);
     }
 }

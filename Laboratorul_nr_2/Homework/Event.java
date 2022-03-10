@@ -7,11 +7,11 @@ public class Event {
     int size;
 
     /**
-     * Constructorul; primeste 4 parametri
-     * @param start ora la care incepe evenimentul
-     * @param end ora la care se sfarseste evenimentul
-     * @param name numele evenimentului
-     * @param size marimea evenimentului
+     * The constructor, it gets 4 parameters
+     * @param start when the event starts
+     * @param end   when the event ends
+     * @param name  event's name
+     * @param size  event's size
      */
     public Event(int start, int end, String name, int size) {
         this.start = start;
@@ -53,9 +53,9 @@ public class Event {
     }
 
     /**
-     * In acest fel fac override la toString
+     * It overrides toString
      *
-     * @return un string ce contine informatii despre eveniment
+     * @return A string that provides information about the event
      */
     @Override
     public String toString() {
