@@ -7,14 +7,14 @@ The time (measured in milliseconds) required for a network packet to go from one
 Example: locations are: v1 (Computer A) v2 (Router A) v3 (Switch A) v4 (Switch B) v5 (Router B) v6 (Computer B).
 
 
-#Compulsory 
+* Compulsory 
 
 - [x] Create an object-oriented model of the problem. You should have at least the following classes Network, Node, Computer, Router, Switch. The natural ordering of the nodes is given by their names.
 - [x] Create the interfaces Identifiable and Storage. The classes above must implement these interfaces accordingly.
 - [x] The Network class will contain a List of nodes.
 - [x] Create and print all the nodes in the network (without the time costs).
 
-#Homework 
+* Homework 
 
 - [x] Each node will contain a Map representing the time costs. Create and print the complete network in the example.
 - [x] Create a default method in the interface Storage, that is able to return the storage capacity in other units of storage (megabyte, kilobyte, byte).
