@@ -6,8 +6,6 @@ Some of them are identified using an IP-address. Some of them are able to store 
 The time (measured in milliseconds) required for a network packet to go from one node to another is known.
 Example: locations are: v1 (Computer A) v2 (Router A) v3 (Switch A) v4 (Switch B) v5 (Router B) v6 (Computer B).
 
-![ScreenShot](C:\Users\camel\OneDrive\Pictures\Screenshots\a.png)
-
 * Compulsory 
 
 - [x] Create an object-oriented model of the problem. You should have at least the following classes Network, Node, Computer, Router, Switch. The natural ordering of the nodes is given by their names.
