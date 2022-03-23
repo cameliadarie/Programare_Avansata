@@ -6,7 +6,7 @@ import java.util.Objects;
  * This class models an intersection
  */
 public class Intersection {
-    String name;
+    private String name;
 
     public Intersection(String name) {
         this.name = name;
