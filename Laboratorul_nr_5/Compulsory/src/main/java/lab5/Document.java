@@ -13,6 +13,6 @@ public class Document extends Item {
                 ", location='" + location + '\'' +
                 ", author='" + author + '\'' +
                 ", year=" + year +
-                '}' + '\'';
+                '}';
     }
 }

@@ -1,11 +1,11 @@
 package lab5;
 
 public abstract class Item {
-    String id;
-    String title;
-    String location;
-    String author;
-    int year;
+    protected String id;
+    protected String title;
+    protected String location;
+    protected String author;
+    protected int year;
 
     public Item(String id, String title, String location, String author, int year) {
         this.id = id;
@@ -55,8 +55,4 @@ public abstract class Item {
         this.year = year;
     }
 
-    @Override
-    public String toString() {
-        return this.toString();
-    }
 }

@@ -14,13 +14,12 @@ public class Book extends Item {
     @Override
     public String toString() {
         return "Book{" +
-
+                "type='" + type + '\'' +
                 ", id='" + id + '\'' +
                 ", title='" + title + '\'' +
                 ", location='" + location + '\'' +
                 ", author='" + author + '\'' +
                 ", year=" + year +
-                ", type='" + type + '\'' +
                 '}';
     }
 }

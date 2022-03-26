@@ -46,7 +46,7 @@ public class Catalog implements Serializable {
     /**
      * We are finding an item by its id
      *
-     * @param id the we are looking for
+     * @param id the id we are looking for
      * @return
      */
     public Item findById(String id) {
