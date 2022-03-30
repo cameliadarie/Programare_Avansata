@@ -11,11 +11,11 @@ import java.io.IOException;
  */
 public class SaveCommand implements Command {
     private String path;
-    private Catalog catalog;
+    private Catalog myCatalog;
 
     public SaveCommand(String path, Catalog catalog) {
         this.path = path;
-        this.catalog = catalog;
+        this.myCatalog = catalog;
     }
 
     public String getPath() {
@@ -26,12 +26,12 @@ public class SaveCommand implements Command {
         this.path = path;
     }
 
-    public Catalog getCatalog() {
-        return catalog;
+    public Catalog getMyCatalog() {
+        return myCatalog;
     }
 
-    public void setCatalog(Catalog catalog) {
-        this.catalog = catalog;
+    public void setMyCatalog(Catalog myCatalog) {
+        this.myCatalog = myCatalog;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class SaveCommand implements Command {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.writeValue(
                 new File(path),
-                catalog);
+                myCatalog);
 
     }
 }

@@ -10,28 +10,28 @@ import java.io.IOException;
  * a catalog and adds that item to the catalog
  */
 public class AddCommand implements Command {
-    private Item my_item;
-    private Catalog my_catalog;
+    private Item myItem;
+    private Catalog myCatalog;
 
-    public AddCommand(Item my_item, Catalog my_catalog) {
-        this.my_item = my_item;
-        this.my_catalog = my_catalog;
+    public AddCommand(Item myItem, Catalog myCatalog) {
+        this.myItem = myItem;
+        this.myCatalog = myCatalog;
     }
 
-    public Item getMy_item() {
-        return my_item;
+    public Item getMyItem() {
+        return myItem;
     }
 
-    public void setMy_item(Item my_item) {
-        this.my_item = my_item;
+    public void setMyItem(Item myItem) {
+        this.myItem = myItem;
     }
 
-    public Catalog getMy_catalog() {
-        return my_catalog;
+    public Catalog getMyCatalog() {
+        return myCatalog;
     }
 
-    public void setMy_catalog(Catalog my_catalog) {
-        this.my_catalog = my_catalog;
+    public void setMyCatalog(Catalog myCatalog) {
+        this.myCatalog = myCatalog;
     }
 
 
@@ -44,7 +44,7 @@ public class AddCommand implements Command {
     @Override
     public void executeCommand() throws IOException, ClassNotFoundException {
 
-        my_catalog.getItems().add(my_item);
+        myCatalog.getItems().add(myItem);
 
     }
 }

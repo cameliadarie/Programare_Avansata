@@ -18,20 +18,21 @@ public class Main {
         Catalog cat = new Catalog("my catalog");
         Item item1 = new Book("knuth67", "The Art of Computer Programming", "d:/books/programming/tacp.ps", "Donald E. Knuth", 1965, "book");
         Item item2 = new Document("java17", "The java Language Specification", "https://docs.oracle.com/javase/specs/jls/se17/html/index.html", "James Gosling & others", 2021);
-        AddCommand adding_command = new AddCommand(item2, cat);
-        ListCommand listing_command = new ListCommand(cat);
-        adding_command.executeCommand();
-        adding_command.executeCommand();
-        listing_command.executeCommand();
-        ViewCommand viewing_command = new ViewCommand("a", item2);
-        viewing_command.executeCommand();
-        SaveCommand saving_command = new SaveCommand("File.json", cat);
-        saving_command.executeCommand();
-        LoadCommand loading_command = new LoadCommand("C:\\Users\\camel\\IdeaProjects\\lab5_hw\\File.json");
-        loading_command.executeCommand();
+        AddCommand addingCommand = new AddCommand(item1, cat);
+        AddCommand addingCommand2 = new AddCommand(item2, cat);
+        ListCommand listingCommand = new ListCommand(cat);
+        addingCommand.executeCommand();
+        addingCommand2.executeCommand();
+        listingCommand.executeCommand();
+        ViewCommand viewingCommand = new ViewCommand("a", item2);
+        viewingCommand.executeCommand();
+        SaveCommand savingCommand = new SaveCommand("File.json", cat);
+        savingCommand.executeCommand();
+        LoadCommand loadingCommand = new LoadCommand("C:\\Users\\camel\\IdeaProjects\\lab5_hw\\File.json");
+        loadingCommand.executeCommand();
         System.out.println();
-        ReportCommand reporting_command = new ReportCommand(cat);
-        reporting_command.executeCommand();
+        ReportCommand reportingCommand = new ReportCommand(cat);
+        reportingCommand.executeCommand();
 
 
     }

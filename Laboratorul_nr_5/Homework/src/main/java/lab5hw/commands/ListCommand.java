@@ -7,18 +7,18 @@ import lab5hw.Catalog;
  * This class is used to list the items of a catalog
  */
 public class ListCommand implements Command {
-    protected Catalog my_catalog;
+    protected Catalog myCatalog;
 
     public ListCommand(Catalog catalog) {
-        this.my_catalog = catalog;
+        this.myCatalog = catalog;
     }
 
-    public Catalog getCatalog() {
-        return my_catalog;
+    public Catalog getMyCatalog() {
+        return myCatalog;
     }
 
-    public void setCatalog(Catalog catalog) {
-        this.my_catalog = catalog;
+    public void setMyCatalog(Catalog myCatalog) {
+        this.myCatalog = myCatalog;
     }
 
     /**
@@ -27,7 +27,7 @@ public class ListCommand implements Command {
     @Override
     public void executeCommand() {
 
-        System.out.println(my_catalog.getItems().toString());
+        System.out.println(myCatalog.getItems().toString());
 
     }
 }

@@ -34,10 +34,10 @@ public class LoadCommand implements Command {
      */
     public Catalog load() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        Catalog my_catalog = objectMapper.readValue(
+        Catalog myCatalog = objectMapper.readValue(
                 new File(path),
                 Catalog.class);
-        return my_catalog;
+        return myCatalog;
     }
 
     /**

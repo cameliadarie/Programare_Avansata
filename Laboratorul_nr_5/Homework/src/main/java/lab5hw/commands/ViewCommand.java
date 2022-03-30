@@ -13,19 +13,27 @@ import java.net.URI;
 public class ViewCommand implements Command {
 
     protected String name;
-    protected Item my_item;
+    protected Item myItem;
 
-    public ViewCommand(String name, Item my_item) {
+    public ViewCommand(String name, Item myItem) {
         this.name = name;
-        this.my_item = my_item;
+        this.myItem = myItem;
     }
 
-    public Item getItem() {
-        return my_item;
+    public String getName() {
+        return name;
     }
 
-    protected void setItem(Item item) {
-        this.my_item = item;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Item getMyItem() {
+        return myItem;
+    }
+
+    public void setMyItem(Item myItem) {
+        this.myItem = myItem;
     }
 
     /**
@@ -39,7 +47,7 @@ public class ViewCommand implements Command {
     @Override
     public void executeCommand() throws IOException, InvalidCommandException {
         Desktop desktop = Desktop.getDesktop();
-        String location = my_item.getLocation();
+        String location = myItem.getLocation();
         boolean matches = location.startsWith("http://")
                 || location.startsWith("https://")
                 || location.startsWith("ftp://");

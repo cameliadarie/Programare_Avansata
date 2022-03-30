@@ -20,18 +20,18 @@ import java.util.List;
  * creates (and opens) an HTML report representing the content of the catalog.
  */
 public class ReportCommand implements Command {
-    protected Catalog catalog;
+    protected Catalog myCatalog;
 
     public ReportCommand(Catalog catalog) {
-        this.catalog = catalog;
+        this.myCatalog = catalog;
     }
 
-    public Catalog getCatalog() {
-        return catalog;
+    public Catalog getMyCatalog() {
+        return myCatalog;
     }
 
-    protected void setCatalog(Catalog catalog) {
-        this.catalog = catalog;
+    public void setMyCatalog(Catalog myCatalog) {
+        this.myCatalog = myCatalog;
     }
 
     @Override
@@ -53,8 +53,8 @@ public class ReportCommand implements Command {
         //Prepare the template input
         Map<String, Object> input = new HashMap<>();
         input.put("title", "Catalog");
-        input.put("CatalogA", catalog);
-        input.put("items", catalog.getItems());
+        input.put("CatalogA", myCatalog);
+        input.put("items", myCatalog.getItems());
 
         //Get the template
         cfg.setDirectoryForTemplateLoading(new File(
