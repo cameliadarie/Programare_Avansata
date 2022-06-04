@@ -24,12 +24,12 @@ invalid = Comanda necunoascuta
   - [x] SetLocale: to set the application current locale.
   - [x] Info: to display informations about the current or a specific locale.
     - When the user sets a specific language tag, various information obtained using standard Java classes such as Currency or DateFormatSymbols should be displayed in a text area, as in the following example:
-      - [x] Country: Romania (Romania)
-      - [x] Language: Romanian (romana)
-      - [x] Currency: RON (Romanian Leu)
-      - [x] Week Days: luni, marti, miercuri, joi, vineri, sambata, duminica
-      - [x] Months: ianuarie, februarie, martie, aprilie, mai, iunie, iulie, august, septembrie, octombrie, noiembrie, decembrie
-      - [x] Today: May 8, 2016 (8 mai 2016)
+      - Country: Romania (Romania)
+      - Language: Romanian (romana)
+      - Currency: RON (Romanian Leu)
+      - Week Days: luni, marti, miercuri, joi, vineri, sambata, duminica
+      - Months: ianuarie, februarie, martie, aprilie, mai, iunie, iulie, august, septembrie, octombrie, noiembrie, decembrie
+      - Today: May 8, 2016 (8 mai 2016)
 - [x] Create the package app and the main class LocaleExplore. Inside this class, read commands from the keyboard and execute them.
 - [x] All the locale-sensitive information should be translated in at least two languages (english-default and romanian), using the resource files.
 
