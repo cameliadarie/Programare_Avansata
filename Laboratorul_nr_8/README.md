@@ -17,11 +17,10 @@ The main specifications of the application are:
 
 ## Homework (2p)
 
-  ![plot](Screenshots/evenimente.png)
 - [x] Create the necessary table in order to store cities in your database. A city may contain: id, country, name, capital(0/1), latitude, longitude
 - [x] Create an object-oriented model of the data managed by the application.
 - [x] Create a tool to import data from a real dataset: World capitals gps or other
-  - ![plot](Screenshots/cont.png)
-  - ![plot](Screenshots/country.png)
+  - ![plot](screenshots/cont.png)
+  - ![plot](screenshots/country.png)
 - [x] Display the distances between various cities in the world.
-  - ![plot](Screenshots/distanta.png)
+  - ![plot](screenshots/distanta.png)
